@@ -1,0 +1,141 @@
+.profile-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 36px 24px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 28px;
+}
+
+.profile-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #673ab7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.profile-username {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.profile-email,
+.profile-joined {
+    font-size: 13px;
+    color: #606060;
+}
+
+.logout-button {
+    margin-left: auto;
+    border: 1.5px solid #e5e5e5;
+    background: white;
+    padding: 9px 18px;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.logout-button:hover {
+    background: #f2f2f2;
+}
+
+.section-heading {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.my-videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.my-video-card {
+    border: 1px solid #ededed;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.my-video-thumb {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    background: #eeeeee;
+}
+
+.my-video-info {
+    padding: 12px 14px;
+}
+
+.my-video-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.my-video-meta {
+    font-size: 12px;
+    color: #606060;
+    margin-bottom: 10px;
+}
+
+.my-video-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.video-action-btn {
+    flex: 1;
+    border: none;
+    padding: 7px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: #f2f2f2;
+    color: #0f0f0f;
+}
+
+.edit-btn:hover {
+    background: #e5e5e5;
+}
+
+.delete-btn {
+    background: #fde8e8;
+    color: #cc0000;
+}
+
+.delete-btn:hover {
+    background: #f9d2d2;
+}
+
+.empty-state {
+    color: #606060;
+    font-size: 14px;
+    padding: 20px 0;
+}

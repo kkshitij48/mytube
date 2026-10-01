@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube - Upload</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html" class="logo">▶ MyTube</a>
+        </div>
+        <div class="header-right">
+            <a href="index.html" class="back-link">Cancel</a>
+        </div>
+    </header>
+
+    <main class="upload-page">
+        <div class="upload-card">
+            <h1 class="upload-heading">Upload video</h1>
+            <p class="upload-subheading">Your video will be visible to everyone once published.</p>
+
+            <form id="uploadForm" class="upload-form">
+
+                <label class="dropzone" id="videoDropzone">
+                    <input type="file" id="videoFile" accept="video/*" required hidden>
+                    <div class="dropzone-content" id="videoDropzoneContent">
+                        <div class="dropzone-icon">⬆</div>
+                        <p class="dropzone-title">Click to select a video file</p>
+                        <p class="dropzone-hint">MP4, WebM, or MOV &nbsp;•&nbsp; up to 200MB</p>
+                    </div>
+                </label>
+
+                <div class="thumb-row">
+                    <label class="thumb-box" id="thumbDropzone">
+                        <input type="file" id="thumbnailFile" accept="image/*" hidden>
+                        <div class="thumb-placeholder" id="thumbPlaceholder">
+                            <span class="dropzone-icon-small">🖼</span>
+                            <span>Thumbnail</span>
+                        </div>
+                        <img id="thumbPreview" class="thumb-preview" style="display:none;">
+                    </label>
+
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" id="titleInput" placeholder="Add a title that describes your video" required maxlength="100">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea id="descriptionInput" placeholder="Tell viewers about your video" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Category</label>
+                        <select id="categoryInput">
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Programming">Programming</option>
+                            <option value="AI">AI</option>
+                            <option value="Gaming">Gaming</option>
+                            <option value="Music">Music</option>
+                            <option value="Technology">Technology</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+    <label>Duration</label>
+    <input type="text" id="durationInput" placeholder="Auto-detected" readonly>
+</div>
+                </div>
+
+                <div class="upload-progress" id="uploadProgress" style="display:none;">
+                    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+                    <p class="progress-label" id="progressLabel">Uploading...</p>
+                </div>
+
+                <p id="uploadError" class="upload-error"></p>
+                <p id="uploadSuccess" class="upload-success"></p>
+
+                <div class="upload-actions">
+                    <a href="index.html" class="btn-secondary">Cancel</a>
+                    <button type="submit" id="uploadButton" class="btn-primary">Publish</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/upload.js"></script>
+</body>
+</html>

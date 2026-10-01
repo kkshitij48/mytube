@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube - Profile</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html" class="logo">▶ MyTube</a>
+        </div>
+        <div class="header-right">
+            <a href="upload.html" class="header-button" style="text-decoration:none;">🎥</a>
+        </div>
+    </header>
+
+    <main class="profile-page">
+
+        <div class="profile-header">
+            <div class="profile-avatar" id="profileAvatar"></div>
+            <div>
+                <h1 class="profile-username" id="profileUsername">Loading...</h1>
+                <p class="profile-email" id="profileEmail"></p>
+                <p class="profile-joined" id="profileJoined"></p>
+            </div>
+            <button id="logoutButton" class="logout-button">Log out</button>
+        </div>
+
+        <h2 class="section-heading">My Videos</h2>
+        <div id="myVideosGrid" class="my-videos-grid"></div>
+
+    </main>
+<script src="js/config.js"></script>
+<script src="js/shared.js"></script>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

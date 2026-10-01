@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyTube</title>
+
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="header-left">
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+            <a href="index.html" class="logo">
+                ▶ MyTube
+            </a>
+
+        </div>
+
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search"
+            >
+
+            <button id="searchButton">
+                🔍
+            </button>
+
+        </div>
+
+
+        <div class="header-right">
+
+            <a href="upload.html" class="header-button" style="text-decoration:none;">🎥</a>
+
+            <button class="header-button">
+                🔔
+            </button>
+
+            <div class="profile">
+                U
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTAINER -->
+
+    <div class="layout">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <nav>
+
+                <a href="#" class="sidebar-item active">
+                    🏠
+                    <span>Home</span>
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    🔥
+                    <span>Trending</span>
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    📺
+                    <span>Subscriptions</span>
+                </a>
+
+                <hr>
+
+                <a href="#" class="sidebar-item">
+                    📚
+                    <span>Library</span>
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    🕐
+                    <span>History</span>
+                </a>
+
+                <hr>
+
+                <h3>Explore</h3>
+
+                <a href="#" class="sidebar-item">
+                    🎵
+                    <span>Music</span>
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    🎮
+                    <span>Gaming</span>
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    💻
+                    <span>Technology</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- CONTENT -->
+
+        <main class="main-content">
+
+            <div class="category-bar">
+
+                <button class="category active-category">
+                    All
+                </button>
+
+                <button class="category">
+                    JavaScript
+                </button>
+
+                <button class="category">
+                    Programming
+                </button>
+
+                <button class="category">
+                    Music
+                </button>
+
+                <button class="category">
+                    Gaming
+                </button>
+
+                <button class="category">
+                    Technology
+                </button>
+
+                <button class="category">
+                    AI
+                </button>
+
+            </div>
+
+
+            <!-- VIDEO FEED -->
+
+            <section class="video-grid" id="videoGrid">
+
+                <!-- JavaScript will insert videos here -->
+
+            </section>
+
+        </main>
+
+    </div>
+<script src="js/config.js"></script>
+<script src="js/shared.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube - Edit Video</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html" class="logo">▶ MyTube</a>
+        </div>
+        <div class="header-right">
+            <a href="profile.html" class="back-link">Back to profile</a>
+        </div>
+    </header>
+
+    <main class="upload-page">
+        <div class="upload-card">
+            <h1 class="upload-heading">Edit video</h1>
+
+            <form id="editForm" class="upload-form">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" id="titleInput" required maxlength="100">
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="descriptionInput" rows="3"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Category</label>
+                        <select id="categoryInput">
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Programming">Programming</option>
+                            <option value="AI">AI</option>
+                            <option value="Gaming">Gaming</option>
+                            <option value="Music">Music</option>
+                            <option value="Technology">Technology</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Duration</label>
+                        <input type="text" id="durationInput">
+                    </div>
+                </div>
+
+                <p id="editError" class="upload-error"></p>
+                <p id="editSuccess" class="upload-success"></p>
+
+                <div class="upload-actions">
+                    <a href="profile.html" class="btn-secondary">Cancel</a>
+                    <button type="submit" id="saveButton" class="btn-primary">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </main>
+<script src="js/config.js"></script>
+<script src="js/shared.js"></script>
+
+    <script src="js/edit.js"></script>
+</body>
+</html>
