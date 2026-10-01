@@ -11,9 +11,14 @@ const historyRoutes = require("./routes/historyRoutes");
 const recommendationRoutes = require("./routes/recommendationRoutes");
 
 const app = express();
+const frontendUrl = (process.env.FRONTEND_URL || "http://127.0.0.1:5500").replace(/\/+$/, "");
 
-app.use(cors({ origin: process.env.FRONTEND_URL || "http://127.0.0.1:5500" }));
-console.log("FRONTEND_URL =", process.env.FRONTEND_URL);
+console.log("CORS URL =", JSON.stringify(frontendUrl));
+
+app.use(cors({
+    origin: frontendUrl
+}));
+
 app.use(express.json());
 
 app.use("/api/videos", videoRoutes);
